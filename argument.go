@@ -63,6 +63,10 @@ func (arg *Argument) AsMessage() *discordgo.Message {
 	return arg.value.(*discordgo.Message)
 }
 
+func (arg *Argument) AsChannel() *discordgo.Channel{
+	return arg.value.(*discordgo.Channel)
+}
+
 // ----- Argument parsing -----
 
 // quick helper so i don't repeat provided:true
